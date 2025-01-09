@@ -29,3 +29,5 @@ if st.button("Optimize Route"):
     map_data = folium.Map(location=[37.7749, -122.4194], zoom_start=12)
     folium.PolyLine(data['route']['geometry']['coordinates'], color="blue").add_to(map_data)
     folium_static(map_data)
+
+    print("Test")
